@@ -3,17 +3,18 @@ package com.applex.bottomnav;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class SectionStatePagerAdapter extends FragmentStatePagerAdapter {
-    private final List<Fragment> fragmentlist= new ArrayList<>();
-    private final List<String> fragmenttitlelist= new ArrayList<>();
+public class SectionPagerAdapter extends FragmentPagerAdapter {
+    private final List<Fragment> fragmentlist = new ArrayList<>();
+    private final List<String> fragmenttitlelist = new ArrayList<>();
 
 
-    public SectionStatePagerAdapter(@NonNull FragmentManager fm) {
+    public SectionPagerAdapter(@NonNull FragmentManager fm) {
         super(fm);
     }
 

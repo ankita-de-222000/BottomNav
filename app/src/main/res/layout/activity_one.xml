@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="#fff">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
 
 
     <RelativeLayout
@@ -19,20 +17,14 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:id="@+id/relLayoutTopBar"
-            android:layout_alignParentTop="true">
+            android:layout_alignParentTop="true"
+            android:background="@drawable/border_bottom">
 
             <com.google.android.material.appbar.AppBarLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                >
 
-
-                <com.google.android.material.tabs.TabLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/tabs">
-
-
-                </com.google.android.material.tabs.TabLayout>
 
             </com.google.android.material.appbar.AppBarLayout>
 
@@ -44,14 +36,15 @@
             android:layout_height="match_parent"
             android:id="@+id/relLayoutMiddle"
             android:layout_below="@+id/relLayoutTopBar"
-            android:layout_above="@+id/relLayoutBotBar">
-
-            <androidx.viewpager.widget.ViewPager
+            android:layout_above="@+id/relLayoutBotBar"
+            android:background="#fff">
+            <TextView
+                android:id="@+id/act_title1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/container">
-
-            </androidx.viewpager.widget.ViewPager>
+                android:layout_height="wrap_content"
+                android:text="This is Activity one"
+                android:textColor="#ff0000"
+                android:textSize="20dp" />
 
 
         </RelativeLayout>
@@ -77,6 +70,5 @@
 
 
     </RelativeLayout>
-
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

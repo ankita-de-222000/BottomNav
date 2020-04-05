@@ -4,15 +4,20 @@
     android:layout_height="1dp">
 
     <item
-        android:bottom="1dp"
+        android:bottom="-1dp"
         android:right="-1dp"
         android:left="-1dp"
-        android:top="-1dp"/>
+        android:top="1dp">
 
         <shape
             android:shape="rectangle">
+            <stroke
+                android:width="0.5dp"
+                android:color="#6A5B5B"/>
+            <solid android:color="#0091EA"/>
 
 
         </shape>
+    </item>
 </layer-list>
 
